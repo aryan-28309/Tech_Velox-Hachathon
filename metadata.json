@@ -1,0 +1,8 @@
+{
+  "name": "Pragati Bharat - All-India Scholarship Portal",
+  "description": "Extremely accessible, simple, multilingual step-by-step scholarship finder with application dates, deadlines, and document checklist for Indian students.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

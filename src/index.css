@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+/* Human-Crafted Typography System */
+:root {
+  --font-display: 'Newsreader', 'Fraunces', 'Merriweather', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  font-family: var(--font-body);
+  color: #1c1917;
+  letter-spacing: -0.011em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Editorial Headline Typography */
+.font-display {
+  font-family: var(--font-display);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* User-Selectable Typography Presets */
+body.font-style-sans,
+.font-style-sans {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+body.font-style-serif,
+.font-style-serif,
+.font-style-serif h1,
+.font-style-serif h2,
+.font-style-serif h3,
+.font-style-serif h4,
+.font-style-serif p,
+.font-style-serif span,
+.font-style-serif button,
+.font-style-serif input,
+.font-style-serif select {
+  font-family: 'Newsreader', 'Merriweather', 'Georgia', serif;
+}
+
+body.font-style-accessible,
+.font-style-accessible,
+.font-style-accessible h1,
+.font-style-accessible h2,
+.font-style-accessible h3,
+.font-style-accessible h4,
+.font-style-accessible p,
+.font-style-accessible span,
+.font-style-accessible button,
+.font-style-accessible input,
+.font-style-accessible select {
+  font-family: 'Lexend', system-ui, sans-serif;
+  letter-spacing: 0.015em;
+}
+
+body.font-style-mono,
+.font-style-mono,
+.font-style-mono h1,
+.font-style-mono h2,
+.font-style-mono h3,
+.font-style-mono h4,
+.font-style-mono p,
+.font-style-mono span,
+.font-style-mono button,
+.font-style-mono input,
+.font-style-mono select {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Human-Crafted Tactile Backgrounds (Warm Paper & Deep Mineral Charcoal) */
+.portal-canvas-light {
+  background-color: #faf8f5;
+  color: #1c1917;
+  /* Subtle, authentic tactile paper texture: no synthetic glowing AI radial gradients */
+  background-image: radial-gradient(#e5e1d8 0.75px, transparent 0.75px);
+  background-size: 24px 24px;
+}
+
+.portal-canvas-dark {
+  background-color: #121417;
+  color: #f4f4f5;
+  /* Deep warm mineral charcoal with subtle atmospheric micro-dot texture */
+  background-image: radial-gradient(#22262d 0.75px, transparent 0.75px);
+  background-size: 24px 24px;
+}
+
+.portal-canvas-bw {
+  background-color: #000000 !important;
+  background-image: none !important;
+  color: #ffffff !important;
+}
+
+/* Tactile Paper Elevation */
+.paper-card-light {
+  background-color: #ffffff;
+  border: 1px solid #e7e4dc;
+  box-shadow: 0 1px 3px rgba(28, 25, 23, 0.04), 0 1px 2px rgba(28, 25, 23, 0.02);
+}
+
+.paper-card-light:hover {
+  border-color: #d6d1c4;
+  box-shadow: 0 4px 12px rgba(28, 25, 23, 0.06), 0 1px 3px rgba(28, 25, 23, 0.03);
+}
+
+.paper-card-dark {
+  background-color: #191c22;
+  border: 1px solid #292d36;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.paper-card-dark:hover {
+  border-color: #3b424e;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+/* Custom Clean Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d6d3d1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a29e;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+}
+
+.portal-canvas-bw ::-webkit-scrollbar-thumb {
+  background: #ffffff;
+}

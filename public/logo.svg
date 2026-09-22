@@ -1,0 +1,288 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Master Background Squircle Gradient (Vibrant Royal Deep Blue) -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1d4ed8"/>
+      <stop offset="35%" stop-color="#1e40af"/>
+      <stop offset="70%" stop-color="#172554"/>
+      <stop offset="100%" stop-color="#091124"/>
+    </linearGradient>
+
+    <!-- Outer Squircle Rim Glow -->
+    <linearGradient id="rimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#2563eb" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#1e3a8a" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <!-- Sunrise Radial Glow -->
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="1"/>
+      <stop offset="25%" stop-color="#facc15" stop-opacity="0.95"/>
+      <stop offset="55%" stop-color="#f97316" stop-opacity="0.6"/>
+      <stop offset="85%" stop-color="#ea580c" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#1e40af" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Sky Ambient Backlight -->
+    <radialGradient id="skyCenterGlow" cx="50%" cy="32%" r="45%">
+      <stop offset="0%" stop-color="#93c5fd" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#3b82f6" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#1e3a8a" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Tricolor Ribbon Gradients -->
+    <!-- Saffron Gradient -->
+    <linearGradient id="saffronGrad" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#ff9933"/>
+      <stop offset="30%" stop-color="#ff7700"/>
+      <stop offset="70%" stop-color="#e65100"/>
+      <stop offset="100%" stop-color="#c43e00"/>
+    </linearGradient>
+
+    <!-- Emerald Green Gradient -->
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="30%" stop-color="#16a34a"/>
+      <stop offset="70%" stop-color="#15803d"/>
+      <stop offset="100%" stop-color="#0f5128"/>
+    </linearGradient>
+
+    <!-- White Flag Ribbons with subtle pearl shading -->
+    <linearGradient id="whiteRibbonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+
+    <!-- Bharat Text Gradient (Warm Saffron to Deep Gold) -->
+    <linearGradient id="bharatTextGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffb703"/>
+      <stop offset="45%" stop-color="#fb8500"/>
+      <stop offset="100%" stop-color="#e05600"/>
+    </linearGradient>
+
+    <!-- Book Page Depth Gradient -->
+    <linearGradient id="bookPageLeft" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="65%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+
+    <!-- Book Spine Navy Base Gradient -->
+    <linearGradient id="bookSpineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="50%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Graduation Cap Tassel Gold -->
+    <linearGradient id="tasselGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="40%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#a16207"/>
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+    <filter id="textGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Base Squircle App Icon Frame -->
+  <rect x="10" y="10" width="480" height="480" rx="96" fill="url(#bgGrad)" stroke="url(#rimGrad)" stroke-width="4" filter="url(#softShadow)"/>
+
+  <!-- Radial Sky Center Lighting -->
+  <circle cx="250" cy="170" r="210" fill="url(#skyCenterGlow)"/>
+
+  <!-- Background: Stylized India Map Silhouette (Muted White Outline & Subtle Fill) -->
+  <g opacity="0.22" transform="translate(130, 20) scale(0.65)">
+    <!-- Stylized outline of India map -->
+    <path d="M 180,30 C 195,20 210,15 225,25 C 240,35 245,55 240,70 C 255,75 270,90 280,105 C 295,115 310,120 325,130 C 335,140 330,160 320,170 C 300,180 290,195 285,210 C 275,230 260,250 250,270 C 235,300 220,330 205,360 C 195,380 185,400 175,420 C 165,400 155,380 145,360 C 130,330 115,300 100,270 C 90,250 75,230 65,210 C 60,195 50,180 30,170 C 20,160 15,140 25,130 C 40,120 55,115 70,105 C 80,90 95,75 110,70 C 105,55 110,35 125,25 C 140,15 155,20 170,30 Z" fill="#ffffff"/>
+  </g>
+
+  <!-- Background Architecture Skyline (Monuments & City Silhouette) -->
+  <!-- Left Side: India Gate & Heritage Domes -->
+  <g fill="#0b245c" opacity="0.55">
+    <!-- India Gate Pillar & Arch -->
+    <rect x="42" y="195" width="48" height="42" rx="2"/>
+    <rect x="46" y="185" width="40" height="10"/>
+    <path d="M 52,185 L 56,170 L 76,170 L 80,185 Z"/>
+    <path d="M 56,237 C 56,215 76,215 76,237 Z" fill="#143477"/>
+
+    <!-- Rashtrapati Bhavan Dome & Colonnades -->
+    <path d="M 98,175 C 98,155 124,155 124,175 Z"/>
+    <rect x="94" y="175" width="34" height="6"/>
+    <rect x="90" y="181" width="42" height="56"/>
+    <!-- Dome Spire -->
+    <line x1="111" y1="155" x2="111" y2="148" stroke="#0b245c" stroke-width="2"/>
+
+    <!-- Temple Spire / Arch Silhouette -->
+    <polygon points="140,175 146,150 152,175"/>
+    <rect x="136" y="175" width="20" height="62"/>
+    <rect x="25" y="210" width="25" height="27"/>
+  </g>
+
+  <!-- Right Side: Modern City Skyline Silhouette -->
+  <g fill="#0b245c" opacity="0.45">
+    <!-- Skyscraper 1 -->
+    <rect x="390" y="200" width="24" height="37"/>
+    <polygon points="402,188 395,200 409,200"/>
+    <!-- Skyscraper 2 -->
+    <rect x="420" y="190" width="28" height="47"/>
+    <line x1="434" y1="190" x2="434" y2="175" stroke="#0b245c" stroke-width="2"/>
+    <!-- Towers & Pillars -->
+    <rect x="360" y="212" width="22" height="25"/>
+    <polygon points="371,202 364,212 378,212"/>
+    <rect x="456" y="205" width="22" height="32"/>
+  </g>
+
+  <!-- Golden Radiant Sunrise behind Student -->
+  <circle cx="285" cy="155" r="58" fill="url(#sunGlow)"/>
+
+  <!-- Flying Birds of Freedom / Aspirations (Upper Right Sky) -->
+  <g fill="#ffffff" opacity="0.9">
+    <!-- Bird 1 (Large) -->
+    <path d="M 380,68 Q 390,56 402,64 Q 414,56 424,68 Q 412,65 402,74 Q 392,65 380,68 Z"/>
+    <!-- Bird 2 (Medium) -->
+    <path d="M 358,82 Q 366,72 376,78 Q 386,72 394,82 Q 384,80 376,87 Q 368,80 358,82 Z"/>
+    <!-- Bird 3 (Small) -->
+    <path d="M 382,98 Q 388,90 396,95 Q 404,90 410,98 Q 402,96 396,102 Q 390,96 382,98 Z"/>
+    <!-- Bird 4 (Tiny) -->
+    <path d="M 368,114 Q 373,107 380,111 Q 387,107 392,114 Q 385,113 380,118 Q 375,113 368,114 Z"/>
+  </g>
+
+  <!-- ================= STUDENT FIGURE ================= -->
+  <!-- Student facing forward towards the sunrise & future -->
+  <g id="studentFigure" transform="translate(242, 98)">
+    <!-- Graduation Cap / Mortarboard -->
+    <!-- Cap Diamond Top -->
+    <polygon points="5,0 80,18 5,36 -70,18" fill="#172554" stroke="#60a5fa" stroke-width="1.8" filter="url(#softShadow)"/>
+    <!-- Cap Skull Cap Underneath -->
+    <path d="M -36,25 C -36,44 46,44 46,25 Z" fill="#0f172a"/>
+
+    <!-- Golden Tassel hanging to the right -->
+    <path d="M 5,18 Q 48,22 55,42" stroke="url(#tasselGold)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <polygon points="55,42 52,65 58,65" fill="url(#tasselGold)"/>
+    <circle cx="5" cy="18" r="3.2" fill="#fef08a"/>
+
+    <!-- Student Head & Hair -->
+    <path d="M -16,46 C -20,44 -22,58 -20,68 C -14,75 24,75 30,68 C 32,58 30,44 26,46 C 22,40 -12,40 -16,46 Z" fill="#090d16"/>
+
+    <!-- Neck -->
+    <rect x="-3" y="68" width="16" height="15" fill="#f3c299"/>
+
+    <!-- Torso / Navy Shirt / Jacket -->
+    <path d="M -60,135 C -55,90 -25,78 5,78 C 35,78 65,90 70,135 Z" fill="#1e3a8a"/>
+
+    <!-- Backpack with contoured straps -->
+    <path d="M -38,135 C -40,94 -15,86 5,86 C 25,86 50,94 48,135 Z" fill="#0f172a" stroke="#3b82f6" stroke-width="1.5"/>
+    <!-- Backpack central pocket ridge -->
+    <path d="M -26,110 C -26,100 0,98 5,98 C 10,98 36,100 36,110 L 32,135 L -22,135 Z" fill="#1e293b"/>
+    <!-- Backpack highlight line -->
+    <path d="M -2,98 L -2,135" stroke="#60a5fa" stroke-width="1.2" stroke-dasharray="3,2"/>
+  </g>
+
+  <!-- ================= OPEN BOOK & TRICOLOR RIBBON ================= -->
+  <!-- The Open Book forming the central foundation -->
+  <g id="openBook">
+    <!-- Dark Blue Outer Cover/Spine Foundation -->
+    <path d="M 55,255 Q 160,268 250,278 Q 340,268 445,255 L 442,268 Q 340,283 250,292 Q 160,283 58,268 Z" fill="url(#bookSpineGrad)" filter="url(#softShadow)"/>
+
+    <!-- Left Book Pages (Multiple layered open sheets) -->
+    <!-- Page 1 (Bottom) -->
+    <path d="M 64,250 Q 160,258 248,272 L 248,279 Q 160,265 62,258 Z" fill="#64748b"/>
+    <!-- Page 2 (Middle) -->
+    <path d="M 72,242 Q 160,250 248,266 L 248,273 Q 160,257 70,250 Z" fill="#cbd5e1"/>
+    <!-- Page 3 (Top Surface Left) -->
+    <path d="M 80,234 Q 165,242 248,260 L 248,267 Q 165,249 78,242 Z" fill="url(#bookPageLeft)"/>
+    <!-- Left Main Open Page Body -->
+    <path d="M 82,232 Q 165,215 248,260 L 248,266 Q 165,232 80,240 Z" fill="#f8fafc"/>
+
+    <!-- Spine Shadow Center Divider -->
+    <path d="M 248,252 L 252,252 L 252,285 L 248,285 Z" fill="#0f172a" opacity="0.6"/>
+
+    <!-- RIGHT PAGE: DYNAMIC TRICOLOR RIBBON FLOWING UPWARD -->
+    <!-- Green Stripe (Bottom Layer of Tricolor) -->
+    <path d="M 250,262 Q 330,230 380,205 C 410,190 435,160 435,130 C 430,150 405,178 375,195 Q 320,230 250,270 Z" fill="url(#greenGrad)" filter="url(#softShadow)"/>
+
+    <!-- White Stripe (Middle Layer of Tricolor) -->
+    <path d="M 250,256 Q 325,218 385,182 C 415,165 442,130 442,95 C 438,122 410,152 380,172 Q 315,218 250,264 Z" fill="url(#whiteRibbonGrad)"/>
+
+    <!-- Saffron Stripe (Top Layer of Tricolor) -->
+    <path d="M 250,248 Q 320,202 388,155 C 420,132 445,95 440,60 C 445,85 418,122 385,148 Q 312,202 250,256 Z" fill="url(#saffronGrad)" filter="url(#softShadow)"/>
+
+    <!-- Saffron Outer Wave Tip Highlight -->
+    <path d="M 440,60 C 442,75 435,92 422,108 C 412,95 425,75 440,60 Z" fill="#ffedd5" opacity="0.8"/>
+  </g>
+
+  <!-- ================= TYPOGRAPHY (PRAGATI BHARAT) ================= -->
+  <!-- "Pragati" in Modern Bold White with Upward Progress Arrow embedded in 'P' -->
+  <g id="brandTypography" filter="url(#textGlow)">
+    <!-- Stylized 'P' with Embedded Rising Arrow -->
+    <g transform="translate(108, 260)">
+      <!-- Main P Vertical Stem -->
+      <path d="M 5,42 L 23,42 L 23,78 L 5,78 Z" fill="#ffffff"/>
+      <!-- P Head Bowl -->
+      <path d="M 23,42 L 40,42 C 55,42 62,50 62,60 C 62,70 55,78 40,78 L 23,78 Z M 23,54 L 38,54 C 44,54 46,56 46,60 C 46,64 44,66 38,66 L 23,66 Z" fill="#ffffff"/>
+      <!-- Upward Progress Arrow Embedded in P Stem -->
+      <polygon points="14,40 3,55 10,55 10,68 18,68 18,55 25,55" fill="#ffffff"/>
+    </g>
+
+    <!-- 'ragati' in Heavy Clean Modern Display Sans -->
+    <text x="180" y="322" font-family="'Plus Jakarta Sans', 'Inter', 'Montserrat', -apple-system, sans-serif" font-weight="900" font-size="70" fill="#ffffff" letter-spacing="-1">ragati</text>
+
+    <!-- "Bharat" in Warm Radiant Saffron / Golden Gradient -->
+    <text x="142" y="375" font-family="'Plus Jakarta Sans', 'Inter', 'Montserrat', -apple-system, sans-serif" font-weight="900" font-size="52" fill="url(#bharatTextGrad)" letter-spacing="0.5">Bharat</text>
+
+    <!-- ================= ASHOKA CHAKRA ================= -->
+    <!-- Navy Blue 24-spoke Ashoka Chakra next to 'Bharat' -->
+    <g id="ashokaChakra" transform="translate(362, 357)">
+      <!-- White Backing Disk -->
+      <circle cx="0" cy="0" r="19" fill="#ffffff"/>
+      <!-- Outer Navy Ring -->
+      <circle cx="0" cy="0" r="18" fill="none" stroke="#000080" stroke-width="2.5"/>
+      <circle cx="0" cy="0" r="15" fill="none" stroke="#000080" stroke-width="0.8"/>
+      <!-- Central Hub -->
+      <circle cx="0" cy="0" r="3.2" fill="#000080"/>
+
+      <!-- 24 Spokes generated with precision geometry -->
+      <g stroke="#000080" stroke-width="1.1">
+        <line x1="0" y1="-15" x2="0" y2="15"/>
+        <line x1="-15" y1="0" x2="15" y2="0"/>
+        <line x1="-10.6" y1="-10.6" x2="10.6" y2="10.6"/>
+        <line x1="-10.6" y1="10.6" x2="10.6" y2="-10.6"/>
+        <line x1="-3.9" y1="-14.5" x2="3.9" y2="14.5"/>
+        <line x1="3.9" y1="-14.5" x2="-3.9" y2="14.5"/>
+        <line x1="-14.5" y1="-3.9" x2="14.5" y2="3.9"/>
+        <line x1="-14.5" y1="3.9" x2="14.5" y2="-3.9"/>
+        <line x1="-7.5" y1="-13" x2="7.5" y2="13"/>
+        <line x1="7.5" y1="-13" x2="-7.5" y2="13"/>
+        <line x1="-13" y1="-7.5" x2="13" y2="7.5"/>
+        <line x1="-13" y1="7.5" x2="13" y2="-7.5"/>
+      </g>
+    </g>
+
+    <!-- Underline Tricolor Flourish Swirl below Bharat -->
+    <path d="M 285,385 C 330,392 375,378 400,345" stroke="url(#saffronGrad)" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 295,388 C 335,394 372,382 395,355" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M 305,391 C 340,396 368,386 390,365" stroke="url(#greenGrad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- ================= SUBTITLE / TAGLINE ================= -->
+  <!-- "— Find Your Scholarship —" and "Build Your Future" -->
+  <g id="tagline" text-anchor="middle" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif">
+    <!-- Top Divider line left -->
+    <line x1="120" y1="400" x2="145" y2="400" stroke="#94a3b8" stroke-width="1.8" stroke-linecap="round"/>
+    <!-- Subtitle Line 1 -->
+    <text x="250" y="405" font-weight="700" font-size="18" fill="#f1f5f9" letter-spacing="0.8">Find Your Scholarship</text>
+    <!-- Top Divider line right -->
+    <line x1="355" y1="400" x2="380" y2="400" stroke="#94a3b8" stroke-width="1.8" stroke-linecap="round"/>
+
+    <!-- Subtitle Line 2 -->
+    <text x="250" y="426" font-weight="800" font-size="19" fill="#f8fafc" letter-spacing="0.5">Build Your Future</text>
+  </g>
+</svg>
